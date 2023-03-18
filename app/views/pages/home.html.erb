@@ -1,2 +1,49 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="particles-js"></div>
+<div class="home-wrapper container-fluid link-black">
+  <div>
+    <h1 class="text-center rv-title">
+      ROGER VILDER
+    </h1>
+    <div class="content-wrapper">
+      <div>
+        <div class="nav-categories">
+          <%= link_to t("navbar.kinetic").upcase, works_path(locale: I18n.locale, collection: "Kinetic"), class: "nav-item" %>
+          <%= link_to t("navbar.neon").upcase, works_path(locale: I18n.locale, collection: "Neon"), class: "nav-item" %>
+          <%= link_to t('navbar.sculptur').upcase, works_path(locale: I18n.locale, collection: "Sculptur"), class: "nav-item" %>
+          <%= link_to t('navbar.drawing').upcase, works_path(locale: I18n.locale, collection: "Drawing"), class: "nav-item" %>
+          <%= link_to t('navbar.photo').upcase, works_path(locale: I18n.locale, collection: "Photo"), class: "nav-item" %>
+          <%= link_to t('navbar.animation').upcase, works_path(locale: I18n.locale, collection: "Animation"), class: "nav-item" %>
+          <%= link_to t('navbar.video').upcase, works_path(locale: I18n.locale, collection: "Video"), class: "nav-item" %>
+        </div>
+        <hr>
+        <div class="nav-categories">
+          <%= link_to t('navbar.films').upcase, films_path(locale: I18n.locale), class: "nav-item" %>
+          <%= link_to t('navbar.texts').upcase, text_path(locale: I18n.locale, id: @text), class: "nav-item" %>
+          <%= link_to t('navbar.about').upcase, about_path(locale: I18n.locale), class: "nav-item" %>
+          <div>
+            <% if I18n.locale == :fr %>
+              <h2>
+                <%= link_to :locale=>'en' do %>
+                  <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg", width: "18px", style: "right: 0;" %>
+                <% end %>
+              </h2>
+            <% else %>
+              <h2>
+                <%= link_to :locale=>'fr' do %>
+                  <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg", width: "18px", style: "right: 0;" %>
+                <% end %>
+              </h2>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div>
+        <%= image_tag "CiM200.gif", width: "328px" %>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between catchphrase">
+      <p><%= t('home.catchphrase') %></p><hr>
+      <p><em><%= t('home.phraseby') %></em></p>
+    </div>
+  </div>
+</div>

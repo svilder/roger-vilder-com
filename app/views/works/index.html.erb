@@ -1,0 +1,17 @@
+<div class="container-less-navbar">
+  <div class="wrapper">
+    <div class="icon-grid">
+      <% @works.each do |work| %>
+        <%= link_to work_path(locale: I18n.locale, id: work.id, collection: work.collection), id: "work#{work.id}" do %>
+          <div class="icon">
+          <%= handle_image_work work, width: 150, height: 150, crop: :fill, class: "icon-image" %>
+            <div class="icon-details">
+              <p><%= work.name %></p>
+              <p><%= work.year %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

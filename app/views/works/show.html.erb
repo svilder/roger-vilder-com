@@ -1,0 +1,33 @@
+<div class="container-for-work">
+  <div class="wrapper align-items-center">
+    <%= render_previous_work(@works_hash, @work) %>
+
+    <div class="one-work-card">
+      <div class="work-card">
+        <% if @work.static_content? %>
+          <%= handle_image_work @work, crop: :fill, class: "work-card-image" %>
+        <% elsif  @work.display_option == @display_options.animation %>
+          <%= render "cinetic_animations", work: @work %>
+        <% else %>
+          <div class="work-card-video">
+            <%= vimeo_video @work %>
+          </div>
+        <% end %>
+        <div class="work-description">
+          <div class="name-year">
+            <p><%= @work.name %></p>
+            <p><%= @work.year %></p>
+          </div>
+          <p><%= @work.dimensions %></p>
+          <p><%= @work.description %></p>
+        </div>
+      </div>
+    </div>
+
+    <%= render_next_work(@works_hash, @work) %>
+
+  </div>
+  <%= link_to works_path(locale: I18n.locale, collection: @work.collection), class: "link-black position-right" do %>
+    <%= image_tag "cancel.png", alt: "Icon made by Freepik", class: "cross" %>
+  <% end %>
+</div>
