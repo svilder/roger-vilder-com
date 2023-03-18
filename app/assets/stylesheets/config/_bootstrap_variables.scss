@@ -5,13 +5,13 @@
 // 3. You can override them below!
 
 // General style
-$font-family-sans-serif: $body-font;
-$headings-font-family:   $headers-font;
-$body-bg:                $light-gray;
-$font-size-base:         1rem;
+$font-family-sans-serif:  $body-font;
+$headings-font-family:    $headers-font;
+$body-bg:                 $gray;
+$font-size-base:          1.4rem;
 
 // Colors
-$body-color: $gray;
+$body-color: black;
 $primary:    $blue;
 $success:    $green;
 $info:       $yellow;
@@ -19,8 +19,7 @@ $danger:     $red;
 $warning:    $orange;
 
 // Buttons & inputs' radius
-$border-radius:    2px;
-$border-radius-lg: 2px;
-$border-radius-sm: 2px;
+$border-radius:    3px;
+$box-shadow:       2px 2px 10px rgba(0,0,0,0.2);
 
 // Override other variables below!

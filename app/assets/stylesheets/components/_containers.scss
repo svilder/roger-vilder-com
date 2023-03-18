@@ -1,0 +1,21 @@
+.container-less-navbar {
+  margin: 20px 56px;
+  min-height: 40vw;
+}
+
+.container-for-work {
+  margin: 20px;
+  min-height: 40vw;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .container-less-navbar {
+    margin: 20px;
+  }
+  .container-for-work {
+    margin: 20px;
+    min-height: 40vw;
+  }
+}

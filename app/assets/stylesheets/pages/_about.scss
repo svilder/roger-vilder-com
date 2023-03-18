@@ -1,0 +1,46 @@
+.exhibition-year {
+  margin: 0 4px;
+  font-weight: bolder;
+}
+
+.exhibition-place {
+  font-style: oblique;
+  margin: 0 4px;
+}
+
+.title {
+  color: white;
+}
+
+.profile-img a {
+  color: black;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.contact-bio {
+  margin-right: 192px;
+}
+
+.stupid-ghost {
+  color: transparent;
+}
+
+.awards {
+  h6 {
+    margin: 16px 0px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}

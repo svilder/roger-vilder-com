@@ -1,0 +1,110 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 44px;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $red;
+  }
+}
+
+.icon {
+  height: 160px;
+  width: 160px;
+  img {
+    border-radius: $border-radius;
+  }
+  &:hover {
+    img {
+      filter: brightness(50%) hue-rotate(90deg);
+    }
+    .icon-details {
+      display: block;
+      text-align: center;
+      font-size: small;
+      max-width: 128px;
+      color: white;
+      position: relative;
+      bottom: 98px;
+      left: 16px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.icon-image {
+  max-width: 160px;
+  max-height: 160px;
+}
+
+.icon-details {
+  display: none;
+}
+
+
+// @include media-breakpoint-only(xs) {
+
+// }
+// @include media-breakpoint-only(sm) {
+
+// }
+// @include media-breakpoint-only(md) {
+
+// }
+// @include media-breakpoint-only(lg) {
+
+// }
+// @include media-breakpoint-only(xl) {
+
+// }
+
+// -- Mobile version
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .one-work-card {
+    position: relative;
+    margin: 30px;
+  }
+
+  .work-description {
+    width: 280px;
+  }
+}
+
+// Medium devices (desktops, 768px and up)
+@media (min-width: 768px) {
+  .icon-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .icon-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+

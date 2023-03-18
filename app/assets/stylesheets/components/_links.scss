@@ -1,0 +1,28 @@
+.link-black {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.link-white {
+  color: black;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.link-gray {
+  color: $other-gray;
+  &:hover{
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.ghost-link {
+  color: transparent;
+}

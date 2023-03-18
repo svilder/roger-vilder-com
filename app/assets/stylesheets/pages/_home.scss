@@ -1,1 +1,114 @@
-// Specific CSS for your home-page
+#particles-js {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  
+    p {
+      color: white;
+    }
+    hr {
+      border-top: 3px solid white;
+    }
+    .nav-item {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .catchphrase {
+    margin: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    img {
+      position: relative;
+      right: 204px;
+    }
+  }
+  
+  .rv-title {
+    color: transparent;
+    font-weight: bold;
+    font-size: 10rem;
+    -webkit-text-stroke: 6px white;
+    letter-spacing: 0.6rem;
+    line-height: 1;
+    margin: 0 14px 56px 14px;
+    font-family: 'Quattrocento Sans', sans-serif;
+  }
+  
+  
+  @include media-breakpoint-only(xs) {
+    .rv-title {
+      color: transparent;
+      font-weight: bold;
+      font-size: 4.5rem;
+      -webkit-text-stroke: 3px white;
+      letter-spacing: .2rem;
+    }
+    .content-wrapper {
+      justify-content: center;
+      img {
+        position: unset;
+        width: 128px;
+        margin: 32px;
+      }
+    }
+  }
+  @include media-breakpoint-only(sm) {
+    .rv-title {
+      color: transparent;
+      font-weight: bold;
+      font-size: 4.5rem;
+      -webkit-text-stroke: 3px white;
+      letter-spacing: .2rem;
+    }
+    .content-wrapper {
+      justify-content: center;
+      img {
+        position: unset;
+        width: 128px;
+        margin: 32px;
+      }
+    }
+  }
+  @include media-breakpoint-only(md) {
+    .rv-title {
+      color: transparent;
+      font-weight: bold;
+      font-size: 4.5rem;
+      -webkit-text-stroke: 3px white;
+      letter-spacing: .2rem;
+    }
+    .content-wrapper {
+      justify-content: center;
+      img {
+        position: unset;
+        width: 128px;
+        margin: 32px;
+      }
+    }
+  }
+  @include media-breakpoint-only(lg) {
+  
+  }
+  @include media-breakpoint-only(xl) {
+  
+  }
+  
