@@ -41,6 +41,10 @@
       <%= render 'shared/minimal_navbar' %>
     <% end %>
     <%= render 'shared/flashes' %>
+    <div data-controller="hello"></div>
+    <script>
+      console.log("toto")
+    </script>
     <%= yield %>
     <% unless action_name == "home" %>
       <%= render 'shared/footer' %>
